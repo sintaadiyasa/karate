@@ -1,0 +1,10 @@
+{
+  data: {
+    createUser: {
+      name: '#string',
+      id: '#string',
+      email: '#string',
+      username: '#string'
+    }
+  }
+}

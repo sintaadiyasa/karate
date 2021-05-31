@@ -1,0 +1,28 @@
+query users(
+    $limit: Int
+){
+    users(
+        options: {
+            paginate: {
+                limit: $limit
+            }
+        }
+    ){
+        data{
+            id
+            name
+            username
+            email
+            address{
+                street
+                city
+                zipcode
+            }
+            phone
+            website
+            company{
+                name
+            }
+        }
+    }
+}

@@ -1,0 +1,97 @@
+<testsuite failures="0"
+           name="isqa/user/userTests.feature"
+           skipped="0"
+           tests="3"
+           time="6.093933">
+   <testcase classname="isqa.user.userTests" name="Create user" time="1.670179">
+      <system-out>* url urlBase ............................................................. passed
+* def testData = Java.type('dataGenerator') ............................... passed
+Given header User-Agent = 'lalala' ........................................ passed
+* def createQuery = read('createUserQuery.graphql') ....................... passed
+* def expectedSchemaResponse = read('createUserResponseSchema.json') ...... passed
+* def createVariable = {name: 'Patricia Lebsack', username: 'Karianne', email: 'Julianne.OConner@kory.org', street: 'Hoeger Mall', city: 'South Elvis', zipcode: '53919-4257', phone: '493-170-9623 x156', website: 'kale.biz', companyName: 'Robel-Corkery'} . passed
+When request {query: '#(createQuery)', variables: '#(createVariable)'} .... passed
+And print createQuery ..................................................... passed
+And print createVariable .................................................. passed
+And method post ........................................................... passed
+And print response ........................................................ passed
+Then status 200 ........................................................... passed
+And match response == expectedSchemaResponse .............................. passed
+And match response.data.createUser.name == 'Patricia Lebsack' ............. passed</system-out>
+   </testcase>
+   <testcase classname="isqa.user.userTests"
+             name="Get list user"
+             time="1.501224">
+      <system-out>* url urlBase ............................................................. passed
+* def testData = Java.type('dataGenerator') ............................... passed
+Given header User-Agent = 'lalala' ........................................ passed
+* def createQuery = read('createUserQuery.graphql') ....................... passed
+* def expectedSchemaResponse = read('createUserResponseSchema.json') ...... passed
+* def createVariable = {name: 'Patricia Lebsack', username: 'Karianne', email: 'Julianne.OConner@kory.org', street: 'Hoeger Mall', city: 'South Elvis', zipcode: '53919-4257', phone: '493-170-9623 x156', website: 'kale.biz', companyName: 'Robel-Corkery'} . passed
+When request {query: '#(createQuery)', variables: '#(createVariable)'} .... passed
+And print createQuery ..................................................... passed
+And print createVariable .................................................. passed
+And method post ........................................................... passed
+And print response ........................................................ passed
+Then status 200 ........................................................... passed
+And match response == expectedSchemaResponse .............................. passed
+And match response.data.createUser.name == 'Patricia Lebsack' ............. passed
+* url urlBase ............................................................. passed
+* def testData = Java.type('dataGenerator') ............................... passed
+Given header User-Agent = 'lalala' ........................................ passed
+* def getQuery = read('getListUserQuery.graphql') ......................... passed
+* def getVariable = {limit : 3} ........................................... passed
+When request {query: '#(getQuery)', variables: '#(getVariable)'} .......... passed
+And print getQuery ........................................................ passed
+And print getVariable ..................................................... passed
+And method post ........................................................... passed
+And print response ........................................................ passed
+Then status 200 ........................................................... passed
+And match each response.data.users.data[*].id != '#null' .................. passed
+And assert response.data.users.data.length == 3 ........................... passed</system-out>
+   </testcase>
+   <testcase classname="isqa.user.userTests"
+             name="Get detail user"
+             time="2.92253">
+      <system-out>* url urlBase ............................................................. passed
+* def testData = Java.type('dataGenerator') ............................... passed
+Given header User-Agent = 'lalala' ........................................ passed
+* def createQuery = read('createUserQuery.graphql') ....................... passed
+* def expectedSchemaResponse = read('createUserResponseSchema.json') ...... passed
+* def createVariable = {name: 'Patricia Lebsack', username: 'Karianne', email: 'Julianne.OConner@kory.org', street: 'Hoeger Mall', city: 'South Elvis', zipcode: '53919-4257', phone: '493-170-9623 x156', website: 'kale.biz', companyName: 'Robel-Corkery'} . passed
+When request {query: '#(createQuery)', variables: '#(createVariable)'} .... passed
+And print createQuery ..................................................... passed
+And print createVariable .................................................. passed
+And method post ........................................................... passed
+And print response ........................................................ passed
+Then status 200 ........................................................... passed
+And match response == expectedSchemaResponse .............................. passed
+And match response.data.createUser.name == 'Patricia Lebsack' ............. passed
+* url urlBase ............................................................. passed
+* def testData = Java.type('dataGenerator') ............................... passed
+Given header User-Agent = 'lalala' ........................................ passed
+* def getQuery = read('getListUserQuery.graphql') ......................... passed
+* def getVariable = {limit : 3} ........................................... passed
+When request {query: '#(getQuery)', variables: '#(getVariable)'} .......... passed
+And print getQuery ........................................................ passed
+And print getVariable ..................................................... passed
+And method post ........................................................... passed
+And print response ........................................................ passed
+Then status 200 ........................................................... passed
+And match each response.data.users.data[*].id != '#null' .................. passed
+And assert response.data.users.data.length == 3 ........................... passed
+* url urlBase ............................................................. passed
+* def testData = Java.type('dataGenerator') ............................... passed
+Given header User-Agent = 'lalala' ........................................ passed
+* def getListUser = call read('reUsableUserSteps.feature@GetListUser') .... passed
+* def getQuery = read('getDetailUserQuery.graphql') ....................... passed
+* def getVariable = {id: '#(getListUser.id)'} ............................. passed
+When request {query: '#(getQuery)', variables: '#(getVariable)'} .......... passed
+And print getQuery ........................................................ passed
+And print getVariable ..................................................... passed
+And method post ........................................................... passed
+And print response ........................................................ passed
+Then status 200 ........................................................... passed
+And match response.data.user.name == '#(getListUser.name)' ................ passed</system-out>
+   </testcase>
+</testsuite>

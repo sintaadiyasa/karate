@@ -1,0 +1,35 @@
+mutation createUser(
+    $name: String!
+    $username: String!
+    $email: String!
+    $street: String
+    $city: String
+    $zipcode: String
+    $phone: String
+    $website: String
+    $companyName: String!
+
+){
+    createUser(
+        input:{
+            name: $name
+            username: $username
+            email: $email
+            address: {
+                street: $street
+                city: $city
+                zipcode: $zipcode
+            }
+            phone: $phone
+            website: $website
+            company: {
+                name: $companyName
+            }
+        }
+    ){
+        id
+        name
+        username
+        email
+    }
+}

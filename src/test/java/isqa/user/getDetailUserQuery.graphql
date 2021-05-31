@@ -1,0 +1,22 @@
+query user(
+    $id: ID!
+){
+    user(
+        id: $id
+    ){
+        id
+        name
+        username
+        email
+        address{
+            street
+            city
+            zipcode
+        }
+        phone
+        website
+        company{
+            name
+        }
+    }
+}

@@ -1,0 +1,2636 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: isqa/user/userTests.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>isqa</td>
+      <td>27 May 2021, 14:26</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">isqa/user/userTests.feature</td>
+          <td      class="passed"    >54</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">54</td>
+
+          <td  class="passed"    >3</td>
+          <td >0</td>
+          <td class="total">3</td>
+
+          <td class="duration" data-value="8287598960">8.287</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">isqa/user/userTests.feature</span>
+
+
+</div>
+
+        <div class="description indention">User</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.040</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url urlBase</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def testData = Java.type('dataGenerator')</span>
+
+  <span class="lead-duration duration">0.038</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">header User-Agent = 'lalala'</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3261897946.html">@Development</a>
+       <a href="report-tag_3121125000.html">@parralel=false</a>
+</div>
+
+
+  <span class="lead-duration duration">1.629</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Create user</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-3" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-4">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-4" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def createQuery = read('createUserQuery.graphql')</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def expectedSchemaResponse = read('createUserResponseSchema.json')</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def createVariable = {name: 'Patricia Lebsack', username: 'Karianne', email: 'Julianne.OConner@kory.org', street: 'Hoeger Mall', city: 'South Elvis', zipcode: '53919-4257', phone: '493-170-9623 x156', website: 'kale.biz', companyName: 'Robel-Corkery'}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">request {query: '#(createQuery)', variables: '#(createVariable)'}</span>
+
+  <span class="lead-duration duration">0.010</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print createQuery</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>14:26:50.867 [print] mutation createUser(
+    $name: String!
+    $username: String!
+    $email: String!
+    $street: String
+    $city: String
+    $zipcode: String
+    $phone: String
+    $website: String
+    $companyName: String!
+
+){
+    createUser(
+        input:{
+            name: $name
+            username: $username
+            email: $email
+            address: {
+                street: $street
+                city: $city
+                zipcode: $zipcode
+            }
+            phone: $phone
+            website: $website
+            company: {
+                name: $companyName
+            }
+        }
+    ){
+        id
+        name
+        username
+        email
+    }
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print createVariable</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>14:26:50.867 [print] {
+  &quot;name&quot;: &quot;Patricia Lebsack&quot;,
+  &quot;username&quot;: &quot;Karianne&quot;,
+  &quot;email&quot;: &quot;Julianne.OConner@kory.org&quot;,
+  &quot;street&quot;: &quot;Hoeger Mall&quot;,
+  &quot;city&quot;: &quot;South Elvis&quot;,
+  &quot;zipcode&quot;: &quot;53919-4257&quot;,
+  &quot;phone&quot;: &quot;493-170-9623 x156&quot;,
+  &quot;website&quot;: &quot;kale.biz&quot;,
+  &quot;companyName&quot;: &quot;Robel-Corkery&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">1.605</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>14:26:51.172 request:
+1 &gt; POST https://graphqlzero.almansi.me/api
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 954
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: graphqlzero.almansi.me
+1 &gt; User-Agent: lalala
+{&quot;query&quot;:&quot;mutation createUser(\n    $name: String!\n    $username: String!\n    $email: String!\n    $street: String\n    $city: String\n    $zipcode: String\n    $phone: String\n    $website: String\n    $companyName: String!\n\n){\n    createUser(\n        input:{\n            name: $name\n            username: $username\n            email: $email\n            address: {\n                street: $street\n                city: $city\n                zipcode: $zipcode\n            }\n            phone: $phone\n            website: $website\n            company: {\n                name: $companyName\n            }\n        }\n    ){\n        id\n        name\n        username\n        email\n    }\n}&quot;,&quot;variables&quot;:{&quot;name&quot;:&quot;Patricia Lebsack&quot;,&quot;username&quot;:&quot;Karianne&quot;,&quot;email&quot;:&quot;Julianne.OConner@kory.org&quot;,&quot;street&quot;:&quot;Hoeger Mall&quot;,&quot;city&quot;:&quot;South Elvis&quot;,&quot;zipcode&quot;:&quot;53919-4257&quot;,&quot;phone&quot;:&quot;493-170-9623 x156&quot;,&quot;website&quot;:&quot;kale.biz&quot;,&quot;companyName&quot;:&quot;Robel-Corkery&quot;}}
+
+14:26:52.473 response time in milliseconds: 1299.77
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-allow-origin: *
+1 &lt; cache-control: s-maxage=0
+1 &lt; content-length: 120
+1 &lt; date: Thu, 27 May 2021 07:26:52 GMT
+1 &lt; server: Vercel
+1 &lt; strict-transport-security: max-age=63072000
+1 &lt; x-vercel-cache: MISS
+1 &lt; x-vercel-id: sin1::sfo1::tjrr4-1622100411965-3ca9cec83462
+{&quot;data&quot;:{&quot;createUser&quot;:{&quot;id&quot;:&quot;11&quot;,&quot;name&quot;:&quot;Patricia Lebsack&quot;,&quot;username&quot;:&quot;Karianne&quot;,&quot;email&quot;:&quot;Julianne.OConner@kory.org&quot;}}}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>14:26:52.473 [print] {
+  &quot;data&quot;: {
+    &quot;createUser&quot;: {
+      &quot;name&quot;: &quot;Patricia Lebsack&quot;,
+      &quot;id&quot;: &quot;11&quot;,
+      &quot;email&quot;: &quot;Julianne.OConner@kory.org&quot;,
+      &quot;username&quot;: &quot;Karianne&quot;
+    }
+  }
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == expectedSchemaResponse</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.createUser.name == 'Patricia Lebsack'</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.040</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-9" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-10">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-10" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url urlBase</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def testData = Java.type('dataGenerator')</span>
+
+  <span class="lead-duration duration">0.038</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">header User-Agent = 'lalala'</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3261897946.html">@Development</a>
+       <a href="report-tag_3980440423.html">@parralel=true</a>
+</div>
+
+
+  <span class="lead-duration duration">1.460</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Get list user</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-11" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-12">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-12" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def getQuery = read('getListUserQuery.graphql')</span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def getVariable = {limit : 3}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">request {query: '#(getQuery)', variables: '#(getVariable)'}</span>
+
+  <span class="lead-duration duration">0.009</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print getQuery</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details">
+        <pre>14:26:50.864 [print] query users(
+    $limit: Int
+){
+    users(
+        options: {
+            paginate: {
+                limit: $limit
+            }
+        }
+    ){
+        data{
+            id
+            name
+            username
+            email
+            address{
+                street
+                city
+                zipcode
+            }
+            phone
+            website
+            company{
+                name
+            }
+        }
+    }
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print getVariable</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details">
+        <pre>14:26:50.866 [print] {
+  &quot;limit&quot;: 3
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">1.420</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>14:26:51.172 request:
+1 &gt; POST https://graphqlzero.almansi.me/api
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 509
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: graphqlzero.almansi.me
+1 &gt; User-Agent: lalala
+{&quot;query&quot;:&quot;query users(\n    $limit: Int\n){\n    users(\n        options: {\n            paginate: {\n                limit: $limit\n            }\n        }\n    ){\n        data{\n            id\n            name\n            username\n            email\n            address{\n                street\n                city\n                zipcode\n            }\n            phone\n            website\n            company{\n                name\n            }\n        }\n    }\n}&quot;,&quot;variables&quot;:{&quot;limit&quot;:3}}
+
+14:26:52.285 response time in milliseconds: 1111.38
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-allow-origin: *
+1 &lt; cache-control: s-maxage=0
+1 &lt; content-length: 803
+1 &lt; date: Thu, 27 May 2021 07:26:52 GMT
+1 &lt; server: Vercel
+1 &lt; strict-transport-security: max-age=63072000
+1 &lt; x-vercel-cache: MISS
+1 &lt; x-vercel-id: sin1::sfo1::k9dj4-1622100411960-f8c5111cf8e6
+{&quot;data&quot;:{&quot;users&quot;:{&quot;data&quot;:[{&quot;id&quot;:&quot;1&quot;,&quot;name&quot;:&quot;Leanne Graham&quot;,&quot;username&quot;:&quot;Bret&quot;,&quot;email&quot;:&quot;Sincere@april.biz&quot;,&quot;address&quot;:{&quot;street&quot;:&quot;Kulas Light&quot;,&quot;city&quot;:&quot;Gwenborough&quot;,&quot;zipcode&quot;:&quot;92998-3874&quot;},&quot;phone&quot;:&quot;1-770-736-8031 x56442&quot;,&quot;website&quot;:&quot;hildegard.org&quot;,&quot;company&quot;:{&quot;name&quot;:&quot;Romaguera-Crona&quot;}},{&quot;id&quot;:&quot;2&quot;,&quot;name&quot;:&quot;Ervin Howell&quot;,&quot;username&quot;:&quot;Antonette&quot;,&quot;email&quot;:&quot;Shanna@melissa.tv&quot;,&quot;address&quot;:{&quot;street&quot;:&quot;Victor Plains&quot;,&quot;city&quot;:&quot;Wisokyburgh&quot;,&quot;zipcode&quot;:&quot;90566-7771&quot;},&quot;phone&quot;:&quot;010-692-6593 x09125&quot;,&quot;website&quot;:&quot;anastasia.net&quot;,&quot;company&quot;:{&quot;name&quot;:&quot;Deckow-Crist&quot;}},{&quot;id&quot;:&quot;3&quot;,&quot;name&quot;:&quot;Clementine Bauch&quot;,&quot;username&quot;:&quot;Samantha&quot;,&quot;email&quot;:&quot;Nathan@yesenia.net&quot;,&quot;address&quot;:{&quot;street&quot;:&quot;Douglas Extension&quot;,&quot;city&quot;:&quot;McKenziehaven&quot;,&quot;zipcode&quot;:&quot;59590-4157&quot;},&quot;phone&quot;:&quot;1-463-123-4447&quot;,&quot;website&quot;:&quot;ramiro.info&quot;,&quot;company&quot;:{&quot;name&quot;:&quot;Romaguera-Jacobson&quot;}}]}}}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-16">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-16" class="collapse collapsable-details">
+        <pre>14:26:52.287 [print] {
+  &quot;data&quot;: {
+    &quot;users&quot;: {
+      &quot;data&quot;: [
+        {
+          &quot;website&quot;: &quot;hildegard.org&quot;,
+          &quot;address&quot;: {
+            &quot;zipcode&quot;: &quot;92998-3874&quot;,
+            &quot;city&quot;: &quot;Gwenborough&quot;,
+            &quot;street&quot;: &quot;Kulas Light&quot;
+          },
+          &quot;phone&quot;: &quot;1-770-736-8031 x56442&quot;,
+          &quot;name&quot;: &quot;Leanne Graham&quot;,
+          &quot;company&quot;: {
+            &quot;name&quot;: &quot;Romaguera-Crona&quot;
+          },
+          &quot;id&quot;: &quot;1&quot;,
+          &quot;email&quot;: &quot;Sincere@april.biz&quot;,
+          &quot;username&quot;: &quot;Bret&quot;
+        },
+        {
+          &quot;website&quot;: &quot;anastasia.net&quot;,
+          &quot;address&quot;: {
+            &quot;zipcode&quot;: &quot;90566-7771&quot;,
+            &quot;city&quot;: &quot;Wisokyburgh&quot;,
+            &quot;street&quot;: &quot;Victor Plains&quot;
+          },
+          &quot;phone&quot;: &quot;010-692-6593 x09125&quot;,
+          &quot;name&quot;: &quot;Ervin Howell&quot;,
+          &quot;company&quot;: {
+            &quot;name&quot;: &quot;Deckow-Crist&quot;
+          },
+          &quot;id&quot;: &quot;2&quot;,
+          &quot;email&quot;: &quot;Shanna@melissa.tv&quot;,
+          &quot;username&quot;: &quot;Antonette&quot;
+        },
+        {
+          &quot;website&quot;: &quot;ramiro.info&quot;,
+          &quot;address&quot;: {
+            &quot;zipcode&quot;: &quot;59590-4157&quot;,
+            &quot;city&quot;: &quot;McKenziehaven&quot;,
+            &quot;street&quot;: &quot;Douglas Extension&quot;
+          },
+          &quot;phone&quot;: &quot;1-463-123-4447&quot;,
+          &quot;name&quot;: &quot;Clementine Bauch&quot;,
+          &quot;company&quot;: {
+            &quot;name&quot;: &quot;Romaguera-Jacobson&quot;
+          },
+          &quot;id&quot;: &quot;3&quot;,
+          &quot;email&quot;: &quot;Nathan@yesenia.net&quot;,
+          &quot;username&quot;: &quot;Samantha&quot;
+        }
+      ]
+    }
+  }
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match each response.data.users.data[*].id != '#null'</span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">assert response.data.users.data.length == 3</span>
+
+  <span class="lead-duration duration">0.012</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.040</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-17">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-17" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-18">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-18" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url urlBase</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def testData = Java.type('dataGenerator')</span>
+
+  <span class="lead-duration duration">0.038</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">header User-Agent = 'lalala'</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3261897946.html">@Development</a>
+       <a href="report-tag_3121125000.html">@parralel=false</a>
+</div>
+
+
+  <span class="lead-duration duration">5.075</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-19">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Get detail user</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-19" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-20">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-20" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def getListUser = call read('reUsableUserSteps.feature@GetListUser')</span>
+
+  <span class="lead-duration duration">2.205</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">isqa/user/reUsableUserSteps.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url urlBase</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def testData = Java.type('dataGenerator')</span>
+
+  <span class="lead-duration duration">0.010</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">header User-Agent = 'lalala'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def getQuery = read('getListUserQuery.graphql')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def getVariable = {}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">request {query: '#(getQuery)', variables: '#(getVariable)'}</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print getQuery</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-21">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-21" class="collapse collapsable-details">
+        <pre>14:26:50.871 [print] query users(
+    $limit: Int
+){
+    users(
+        options: {
+            paginate: {
+                limit: $limit
+            }
+        }
+    ){
+        data{
+            id
+            name
+            username
+            email
+            address{
+                street
+                city
+                zipcode
+            }
+            phone
+            website
+            company{
+                name
+            }
+        }
+    }
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print getVariable</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-22">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-22" class="collapse collapsable-details">
+        <pre>14:26:50.871 [print] {
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">2.162</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-23">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-23" class="collapse collapsable-details">
+        <pre>14:26:51.172 request:
+1 &gt; POST https://graphqlzero.almansi.me/api
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 500
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: graphqlzero.almansi.me
+1 &gt; User-Agent: lalala
+{&quot;query&quot;:&quot;query users(\n    $limit: Int\n){\n    users(\n        options: {\n            paginate: {\n                limit: $limit\n            }\n        }\n    ){\n        data{\n            id\n            name\n            username\n            email\n            address{\n                street\n                city\n                zipcode\n            }\n            phone\n            website\n            company{\n                name\n            }\n        }\n    }\n}&quot;,&quot;variables&quot;:{}}
+
+14:26:53.033 response time in milliseconds: 1858.98
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-allow-origin: *
+1 &lt; cache-control: s-maxage=0
+1 &lt; date: Thu, 27 May 2021 07:26:52 GMT
+1 &lt; server: Vercel
+1 &lt; strict-transport-security: max-age=63072000
+1 &lt; x-vercel-cache: MISS
+1 &lt; x-vercel-id: sin1::sfo1::rx9sd-1622100411907-cd6102efe4a2
+{&quot;data&quot;:{&quot;users&quot;:{&quot;data&quot;:[{&quot;id&quot;:&quot;1&quot;,&quot;name&quot;:&quot;Leanne Graham&quot;,&quot;username&quot;:&quot;Bret&quot;,&quot;email&quot;:&quot;Sincere@april.biz&quot;,&quot;address&quot;:{&quot;street&quot;:&quot;Kulas Light&quot;,&quot;city&quot;:&quot;Gwenborough&quot;,&quot;zipcode&quot;:&quot;92998-3874&quot;},&quot;phone&quot;:&quot;1-770-736-8031 x56442&quot;,&quot;website&quot;:&quot;hildegard.org&quot;,&quot;company&quot;:{&quot;name&quot;:&quot;Romaguera-Crona&quot;}},{&quot;id&quot;:&quot;2&quot;,&quot;name&quot;:&quot;Ervin Howell&quot;,&quot;username&quot;:&quot;Antonette&quot;,&quot;email&quot;:&quot;Shanna@melissa.tv&quot;,&quot;address&quot;:{&quot;street&quot;:&quot;Victor Plains&quot;,&quot;city&quot;:&quot;Wisokyburgh&quot;,&quot;zipcode&quot;:&quot;90566-7771&quot;},&quot;phone&quot;:&quot;010-692-6593 x09125&quot;,&quot;website&quot;:&quot;anastasia.net&quot;,&quot;company&quot;:{&quot;name&quot;:&quot;Deckow-Crist&quot;}},{&quot;id&quot;:&quot;3&quot;,&quot;name&quot;:&quot;Clementine Bauch&quot;,&quot;username&quot;:&quot;Samantha&quot;,&quot;email&quot;:&quot;Nathan@yesenia.net&quot;,&quot;address&quot;:{&quot;street&quot;:&quot;Douglas Extension&quot;,&quot;city&quot;:&quot;McKenziehaven&quot;,&quot;zipcode&quot;:&quot;59590-4157&quot;},&quot;phone&quot;:&quot;1-463-123-4447&quot;,&quot;website&quot;:&quot;ramiro.info&quot;,&quot;company&quot;:{&quot;name&quot;:&quot;Romaguera-Jacobson&quot;}},{&quot;id&quot;:&quot;4&quot;,&quot;name&quot;:&quot;Patricia Lebsack&quot;,&quot;username&quot;:&quot;Karianne&quot;,&quot;email&quot;:&quot;Julianne.OConner@kory.org&quot;,&quot;address&quot;:{&quot;street&quot;:&quot;Hoeger Mall&quot;,&quot;city&quot;:&quot;South Elvis&quot;,&quot;zipcode&quot;:&quot;53919-4257&quot;},&quot;phone&quot;:&quot;493-170-9623 x156&quot;,&quot;website&quot;:&quot;kale.biz&quot;,&quot;company&quot;:{&quot;name&quot;:&quot;Robel-Corkery&quot;}},{&quot;id&quot;:&quot;5&quot;,&quot;name&quot;:&quot;Chelsey Dietrich&quot;,&quot;username&quot;:&quot;Kamren&quot;,&quot;email&quot;:&quot;Lucio_Hettinger@annie.ca&quot;,&quot;address&quot;:{&quot;street&quot;:&quot;Skiles Walks&quot;,&quot;city&quot;:&quot;Roscoeview&quot;,&quot;zipcode&quot;:&quot;33263&quot;},&quot;phone&quot;:&quot;(254)954-1289&quot;,&quot;website&quot;:&quot;demarco.info&quot;,&quot;company&quot;:{&quot;name&quot;:&quot;Keebler LLC&quot;}},{&quot;id&quot;:&quot;6&quot;,&quot;name&quot;:&quot;Mrs. Dennis Schulist&quot;,&quot;username&quot;:&quot;Leopoldo_Corkery&quot;,&quot;email&quot;:&quot;Karley_Dach@jasper.info&quot;,&quot;address&quot;:{&quot;street&quot;:&quot;Norberto Crossing&quot;,&quot;city&quot;:&quot;South Christy&quot;,&quot;zipcode&quot;:&quot;23505-1337&quot;},&quot;phone&quot;:&quot;1-477-935-8478 x6430&quot;,&quot;website&quot;:&quot;ola.org&quot;,&quot;company&quot;:{&quot;name&quot;:&quot;Considine-Lockman&quot;}},{&quot;id&quot;:&quot;7&quot;,&quot;name&quot;:&quot;Kurtis Weissnat&quot;,&quot;username&quot;:&quot;Elwyn.Skiles&quot;,&quot;email&quot;:&quot;Telly.Hoeger@billy.biz&quot;,&quot;address&quot;:{&quot;street&quot;:&quot;Rex Trail&quot;,&quot;city&quot;:&quot;Howemouth&quot;,&quot;zipcode&quot;:&quot;58804-1099&quot;},&quot;phone&quot;:&quot;210.067.6132&quot;,&quot;website&quot;:&quot;elvis.io&quot;,&quot;company&quot;:{&quot;name&quot;:&quot;Johns Group&quot;}},{&quot;id&quot;:&quot;8&quot;,&quot;name&quot;:&quot;Nicholas Runolfsdottir V&quot;,&quot;username&quot;:&quot;Maxime_Nienow&quot;,&quot;email&quot;:&quot;Sherwood@rosamond.me&quot;,&quot;address&quot;:{&quot;street&quot;:&quot;Ellsworth Summit&quot;,&quot;city&quot;:&quot;Aliyaview&quot;,&quot;zipcode&quot;:&quot;45169&quot;},&quot;phone&quot;:&quot;586.493.6943 x140&quot;,&quot;website&quot;:&quot;jacynthe.com&quot;,&quot;company&quot;:{&quot;name&quot;:&quot;Abernathy Group&quot;}},{&quot;id&quot;:&quot;9&quot;,&quot;name&quot;:&quot;Glenna Reichert&quot;,&quot;username&quot;:&quot;Delphine&quot;,&quot;email&quot;:&quot;Chaim_McDermott@dana.io&quot;,&quot;address&quot;:{&quot;street&quot;:&quot;Dayna Park&quot;,&quot;city&quot;:&quot;Bartholomebury&quot;,&quot;zipcode&quot;:&quot;76495-3109&quot;},&quot;phone&quot;:&quot;(775)976-6794 x41206&quot;,&quot;website&quot;:&quot;conrad.com&quot;,&quot;company&quot;:{&quot;name&quot;:&quot;Yost and Sons&quot;}},{&quot;id&quot;:&quot;10&quot;,&quot;name&quot;:&quot;Clementina DuBuque&quot;,&quot;username&quot;:&quot;Moriah.Stanton&quot;,&quot;email&quot;:&quot;Rey.Padberg@karina.biz&quot;,&quot;address&quot;:{&quot;street&quot;:&quot;Kattie Turnpike&quot;,&quot;city&quot;:&quot;Lebsackbury&quot;,&quot;zipcode&quot;:&quot;31428-2261&quot;},&quot;phone&quot;:&quot;024-648-3804&quot;,&quot;website&quot;:&quot;ambrose.net&quot;,&quot;company&quot;:{&quot;name&quot;:&quot;Hoeger LLC&quot;}}]}}}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-24">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-24" class="collapse collapsable-details">
+        <pre>14:26:53.035 [print] {
+  &quot;data&quot;: {
+    &quot;users&quot;: {
+      &quot;data&quot;: [
+        {
+          &quot;website&quot;: &quot;hildegard.org&quot;,
+          &quot;address&quot;: {
+            &quot;zipcode&quot;: &quot;92998-3874&quot;,
+            &quot;city&quot;: &quot;Gwenborough&quot;,
+            &quot;street&quot;: &quot;Kulas Light&quot;
+          },
+          &quot;phone&quot;: &quot;1-770-736-8031 x56442&quot;,
+          &quot;name&quot;: &quot;Leanne Graham&quot;,
+          &quot;company&quot;: {
+            &quot;name&quot;: &quot;Romaguera-Crona&quot;
+          },
+          &quot;id&quot;: &quot;1&quot;,
+          &quot;email&quot;: &quot;Sincere@april.biz&quot;,
+          &quot;username&quot;: &quot;Bret&quot;
+        },
+        {
+          &quot;website&quot;: &quot;anastasia.net&quot;,
+          &quot;address&quot;: {
+            &quot;zipcode&quot;: &quot;90566-7771&quot;,
+            &quot;city&quot;: &quot;Wisokyburgh&quot;,
+            &quot;street&quot;: &quot;Victor Plains&quot;
+          },
+          &quot;phone&quot;: &quot;010-692-6593 x09125&quot;,
+          &quot;name&quot;: &quot;Ervin Howell&quot;,
+          &quot;company&quot;: {
+            &quot;name&quot;: &quot;Deckow-Crist&quot;
+          },
+          &quot;id&quot;: &quot;2&quot;,
+          &quot;email&quot;: &quot;Shanna@melissa.tv&quot;,
+          &quot;username&quot;: &quot;Antonette&quot;
+        },
+        {
+          &quot;website&quot;: &quot;ramiro.info&quot;,
+          &quot;address&quot;: {
+            &quot;zipcode&quot;: &quot;59590-4157&quot;,
+            &quot;city&quot;: &quot;McKenziehaven&quot;,
+            &quot;street&quot;: &quot;Douglas Extension&quot;
+          },
+          &quot;phone&quot;: &quot;1-463-123-4447&quot;,
+          &quot;name&quot;: &quot;Clementine Bauch&quot;,
+          &quot;company&quot;: {
+            &quot;name&quot;: &quot;Romaguera-Jacobson&quot;
+          },
+          &quot;id&quot;: &quot;3&quot;,
+          &quot;email&quot;: &quot;Nathan@yesenia.net&quot;,
+          &quot;username&quot;: &quot;Samantha&quot;
+        },
+        {
+          &quot;website&quot;: &quot;kale.biz&quot;,
+          &quot;address&quot;: {
+            &quot;zipcode&quot;: &quot;53919-4257&quot;,
+            &quot;city&quot;: &quot;South Elvis&quot;,
+            &quot;street&quot;: &quot;Hoeger Mall&quot;
+          },
+          &quot;phone&quot;: &quot;493-170-9623 x156&quot;,
+          &quot;name&quot;: &quot;Patricia Lebsack&quot;,
+          &quot;company&quot;: {
+            &quot;name&quot;: &quot;Robel-Corkery&quot;
+          },
+          &quot;id&quot;: &quot;4&quot;,
+          &quot;email&quot;: &quot;Julianne.OConner@kory.org&quot;,
+          &quot;username&quot;: &quot;Karianne&quot;
+        },
+        {
+          &quot;website&quot;: &quot;demarco.info&quot;,
+          &quot;address&quot;: {
+            &quot;zipcode&quot;: &quot;33263&quot;,
+            &quot;city&quot;: &quot;Roscoeview&quot;,
+            &quot;street&quot;: &quot;Skiles Walks&quot;
+          },
+          &quot;phone&quot;: &quot;(254)954-1289&quot;,
+          &quot;name&quot;: &quot;Chelsey Dietrich&quot;,
+          &quot;company&quot;: {
+            &quot;name&quot;: &quot;Keebler LLC&quot;
+          },
+          &quot;id&quot;: &quot;5&quot;,
+          &quot;email&quot;: &quot;Lucio_Hettinger@annie.ca&quot;,
+          &quot;username&quot;: &quot;Kamren&quot;
+        },
+        {
+          &quot;website&quot;: &quot;ola.org&quot;,
+          &quot;address&quot;: {
+            &quot;zipcode&quot;: &quot;23505-1337&quot;,
+            &quot;city&quot;: &quot;South Christy&quot;,
+            &quot;street&quot;: &quot;Norberto Crossing&quot;
+          },
+          &quot;phone&quot;: &quot;1-477-935-8478 x6430&quot;,
+          &quot;name&quot;: &quot;Mrs. Dennis Schulist&quot;,
+          &quot;company&quot;: {
+            &quot;name&quot;: &quot;Considine-Lockman&quot;
+          },
+          &quot;id&quot;: &quot;6&quot;,
+          &quot;email&quot;: &quot;Karley_Dach@jasper.info&quot;,
+          &quot;username&quot;: &quot;Leopoldo_Corkery&quot;
+        },
+        {
+          &quot;website&quot;: &quot;elvis.io&quot;,
+          &quot;address&quot;: {
+            &quot;zipcode&quot;: &quot;58804-1099&quot;,
+            &quot;city&quot;: &quot;Howemouth&quot;,
+            &quot;street&quot;: &quot;Rex Trail&quot;
+          },
+          &quot;phone&quot;: &quot;210.067.6132&quot;,
+          &quot;name&quot;: &quot;Kurtis Weissnat&quot;,
+          &quot;company&quot;: {
+            &quot;name&quot;: &quot;Johns Group&quot;
+          },
+          &quot;id&quot;: &quot;7&quot;,
+          &quot;email&quot;: &quot;Telly.Hoeger@billy.biz&quot;,
+          &quot;username&quot;: &quot;Elwyn.Skiles&quot;
+        },
+        {
+          &quot;website&quot;: &quot;jacynthe.com&quot;,
+          &quot;address&quot;: {
+            &quot;zipcode&quot;: &quot;45169&quot;,
+            &quot;city&quot;: &quot;Aliyaview&quot;,
+            &quot;street&quot;: &quot;Ellsworth Summit&quot;
+          },
+          &quot;phone&quot;: &quot;586.493.6943 x140&quot;,
+          &quot;name&quot;: &quot;Nicholas Runolfsdottir V&quot;,
+          &quot;company&quot;: {
+            &quot;name&quot;: &quot;Abernathy Group&quot;
+          },
+          &quot;id&quot;: &quot;8&quot;,
+          &quot;email&quot;: &quot;Sherwood@rosamond.me&quot;,
+          &quot;username&quot;: &quot;Maxime_Nienow&quot;
+        },
+        {
+          &quot;website&quot;: &quot;conrad.com&quot;,
+          &quot;address&quot;: {
+            &quot;zipcode&quot;: &quot;76495-3109&quot;,
+            &quot;city&quot;: &quot;Bartholomebury&quot;,
+            &quot;street&quot;: &quot;Dayna Park&quot;
+          },
+          &quot;phone&quot;: &quot;(775)976-6794 x41206&quot;,
+          &quot;name&quot;: &quot;Glenna Reichert&quot;,
+          &quot;company&quot;: {
+            &quot;name&quot;: &quot;Yost and Sons&quot;
+          },
+          &quot;id&quot;: &quot;9&quot;,
+          &quot;email&quot;: &quot;Chaim_McDermott@dana.io&quot;,
+          &quot;username&quot;: &quot;Delphine&quot;
+        },
+        {
+          &quot;website&quot;: &quot;ambrose.net&quot;,
+          &quot;address&quot;: {
+            &quot;zipcode&quot;: &quot;31428-2261&quot;,
+            &quot;city&quot;: &quot;Lebsackbury&quot;,
+            &quot;street&quot;: &quot;Kattie Turnpike&quot;
+          },
+          &quot;phone&quot;: &quot;024-648-3804&quot;,
+          &quot;name&quot;: &quot;Clementina DuBuque&quot;,
+          &quot;company&quot;: {
+            &quot;name&quot;: &quot;Hoeger LLC&quot;
+          },
+          &quot;id&quot;: &quot;10&quot;,
+          &quot;email&quot;: &quot;Rey.Padberg@karina.biz&quot;,
+          &quot;username&quot;: &quot;Moriah.Stanton&quot;
+        }
+      ]
+    }
+  }
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def id = response.data.users.data[0].id</span>
+
+  <span class="lead-duration duration">0.011</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def name = response.data.users.data[0].name</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def getQuery = read('getDetailUserQuery.graphql')</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def getVariable = {id: '#(getListUser.id)'}</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">request {query: '#(getQuery)', variables: '#(getVariable)'}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print getQuery</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-25">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-25" class="collapse collapsable-details">
+        <pre>14:26:53.060 [print] query user(
+    $id: ID!
+){
+    user(
+        id: $id
+    ){
+        id
+        name
+        username
+        email
+        address{
+            street
+            city
+            zipcode
+        }
+        phone
+        website
+        company{
+            name
+        }
+    }
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print getVariable</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-26">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-26" class="collapse collapsable-details">
+        <pre>14:26:53.060 [print] {
+  &quot;id&quot;: &quot;1&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.662</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-27">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-27" class="collapse collapsable-details">
+        <pre>14:26:53.062 request:
+1 &gt; POST https://graphqlzero.almansi.me/api
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 336
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: graphqlzero.almansi.me
+1 &gt; User-Agent: lalala
+{&quot;query&quot;:&quot;query user(\n    $id: ID!\n){\n    user(\n        id: $id\n    ){\n        id\n        name\n        username\n        email\n        address{\n            street\n            city\n            zipcode\n        }\n        phone\n        website\n        company{\n            name\n        }\n    }\n}&quot;,&quot;variables&quot;:{&quot;id&quot;:&quot;1&quot;}}
+
+14:26:53.719 response time in milliseconds: 656.69
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-allow-origin: *
+1 &lt; cache-control: s-maxage=0
+1 &lt; content-length: 272
+1 &lt; date: Thu, 27 May 2021 07:26:53 GMT
+1 &lt; server: Vercel
+1 &lt; strict-transport-security: max-age=63072000
+1 &lt; x-vercel-cache: MISS
+1 &lt; x-vercel-id: sin1::sfo1::k4rgm-1622100413294-6a82a312035b
+{&quot;data&quot;:{&quot;user&quot;:{&quot;id&quot;:&quot;1&quot;,&quot;name&quot;:&quot;Leanne Graham&quot;,&quot;username&quot;:&quot;Bret&quot;,&quot;email&quot;:&quot;Sincere@april.biz&quot;,&quot;address&quot;:{&quot;street&quot;:&quot;Kulas Light&quot;,&quot;city&quot;:&quot;Gwenborough&quot;,&quot;zipcode&quot;:&quot;92998-3874&quot;},&quot;phone&quot;:&quot;1-770-736-8031 x56442&quot;,&quot;website&quot;:&quot;hildegard.org&quot;,&quot;company&quot;:{&quot;name&quot;:&quot;Romaguera-Crona&quot;}}}}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-28">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-28" class="collapse collapsable-details">
+        <pre>14:26:53.723 [print] {
+  &quot;data&quot;: {
+    &quot;user&quot;: {
+      &quot;website&quot;: &quot;hildegard.org&quot;,
+      &quot;address&quot;: {
+        &quot;zipcode&quot;: &quot;92998-3874&quot;,
+        &quot;city&quot;: &quot;Gwenborough&quot;,
+        &quot;street&quot;: &quot;Kulas Light&quot;
+      },
+      &quot;phone&quot;: &quot;1-770-736-8031 x56442&quot;,
+      &quot;name&quot;: &quot;Leanne Graham&quot;,
+      &quot;company&quot;: {
+        &quot;name&quot;: &quot;Romaguera-Crona&quot;
+      },
+      &quot;id&quot;: &quot;1&quot;,
+      &quot;email&quot;: &quot;Sincere@april.biz&quot;,
+      &quot;username&quot;: &quot;Bret&quot;
+    }
+  }
+}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.data.user.name == '#(getListUser.name)'</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

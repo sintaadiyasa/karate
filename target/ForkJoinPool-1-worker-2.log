@@ -1,0 +1,115 @@
+14:26:50.864 [print] query users(
+    $limit: Int
+){
+    users(
+        options: {
+            paginate: {
+                limit: $limit
+            }
+        }
+    ){
+        data{
+            id
+            name
+            username
+            email
+            address{
+                street
+                city
+                zipcode
+            }
+            phone
+            website
+            company{
+                name
+            }
+        }
+    }
+}
+14:26:50.866 [print] {
+  "limit": 3
+}
+
+14:26:51.172 request:
+1 > POST https://graphqlzero.almansi.me/api
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 509
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: graphqlzero.almansi.me
+1 > User-Agent: lalala
+{"query":"query users(\n    $limit: Int\n){\n    users(\n        options: {\n            paginate: {\n                limit: $limit\n            }\n        }\n    ){\n        data{\n            id\n            name\n            username\n            email\n            address{\n                street\n                city\n                zipcode\n            }\n            phone\n            website\n            company{\n                name\n            }\n        }\n    }\n}","variables":{"limit":3}}
+
+14:26:52.285 response time in milliseconds: 1111.38
+1 < 200
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < access-control-allow-credentials: true
+1 < access-control-allow-origin: *
+1 < cache-control: s-maxage=0
+1 < content-length: 803
+1 < date: Thu, 27 May 2021 07:26:52 GMT
+1 < server: Vercel
+1 < strict-transport-security: max-age=63072000
+1 < x-vercel-cache: MISS
+1 < x-vercel-id: sin1::sfo1::k9dj4-1622100411960-f8c5111cf8e6
+{"data":{"users":{"data":[{"id":"1","name":"Leanne Graham","username":"Bret","email":"Sincere@april.biz","address":{"street":"Kulas Light","city":"Gwenborough","zipcode":"92998-3874"},"phone":"1-770-736-8031 x56442","website":"hildegard.org","company":{"name":"Romaguera-Crona"}},{"id":"2","name":"Ervin Howell","username":"Antonette","email":"Shanna@melissa.tv","address":{"street":"Victor Plains","city":"Wisokyburgh","zipcode":"90566-7771"},"phone":"010-692-6593 x09125","website":"anastasia.net","company":{"name":"Deckow-Crist"}},{"id":"3","name":"Clementine Bauch","username":"Samantha","email":"Nathan@yesenia.net","address":{"street":"Douglas Extension","city":"McKenziehaven","zipcode":"59590-4157"},"phone":"1-463-123-4447","website":"ramiro.info","company":{"name":"Romaguera-Jacobson"}}]}}}
+
+
+14:26:52.287 [print] {
+  "data": {
+    "users": {
+      "data": [
+        {
+          "website": "hildegard.org",
+          "address": {
+            "zipcode": "92998-3874",
+            "city": "Gwenborough",
+            "street": "Kulas Light"
+          },
+          "phone": "1-770-736-8031 x56442",
+          "name": "Leanne Graham",
+          "company": {
+            "name": "Romaguera-Crona"
+          },
+          "id": "1",
+          "email": "Sincere@april.biz",
+          "username": "Bret"
+        },
+        {
+          "website": "anastasia.net",
+          "address": {
+            "zipcode": "90566-7771",
+            "city": "Wisokyburgh",
+            "street": "Victor Plains"
+          },
+          "phone": "010-692-6593 x09125",
+          "name": "Ervin Howell",
+          "company": {
+            "name": "Deckow-Crist"
+          },
+          "id": "2",
+          "email": "Shanna@melissa.tv",
+          "username": "Antonette"
+        },
+        {
+          "website": "ramiro.info",
+          "address": {
+            "zipcode": "59590-4157",
+            "city": "McKenziehaven",
+            "street": "Douglas Extension"
+          },
+          "phone": "1-463-123-4447",
+          "name": "Clementine Bauch",
+          "company": {
+            "name": "Romaguera-Jacobson"
+          },
+          "id": "3",
+          "email": "Nathan@yesenia.net",
+          "username": "Samantha"
+        }
+      ]
+    }
+  }
+}
+
