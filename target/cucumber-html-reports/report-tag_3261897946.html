@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>isqa</td>
-      <td>27 May 2021, 14:26</td>
+      <td>02 Jun 2021, 08:32</td>
     </tr>
   </tbody>
 </table>
@@ -138,7 +138,7 @@ $(document).ready(function() {
           <td >0</td>
           <td class="total">3</td>
 
-          <td class="duration" data-value="8166182982">8.166</td>
+          <td class="duration" data-value="10901739030">10.901</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -182,7 +182,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">1.629</span>
+  <span class="lead-duration duration">2.323</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -225,7 +225,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def createQuery = read('createUserQuery.graphql')</span>
 
-  <span class="lead-duration duration">0.005</span>
+  <span class="lead-duration duration">0.011</span>
 
 </div>
 
@@ -252,7 +252,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def expectedSchemaResponse = read('createUserResponseSchema.json')</span>
 
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.006</span>
 
 </div>
 
@@ -306,7 +306,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">request {query: '#(createQuery)', variables: '#(createVariable)'}</span>
 
-  <span class="lead-duration duration">0.010</span>
+  <span class="lead-duration duration">0.005</span>
 
 </div>
 
@@ -351,7 +351,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>14:26:50.867 [print] mutation createUser(
+        <pre>08:32:52.290 [print] mutation createUser(
     $name: String!
     $username: String!
     $email: String!
@@ -422,7 +422,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-4" class="collapse collapsable-details">
-        <pre>14:26:50.867 [print] {
+        <pre>08:32:52.291 [print] {
   &quot;name&quot;: &quot;Patricia Lebsack&quot;,
   &quot;username&quot;: &quot;Karianne&quot;,
   &quot;email&quot;: &quot;Julianne.OConner@kory.org&quot;,
@@ -451,7 +451,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">1.605</span>
+  <span class="lead-duration duration">2.293</span>
 
 </div>
 
@@ -469,7 +469,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-5" class="collapse collapsable-details">
-        <pre>14:26:51.172 request:
+        <pre>08:32:52.668 request:
 1 &gt; POST https://graphqlzero.almansi.me/api
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -479,7 +479,7 @@ $(document).ready(function() {
 1 &gt; User-Agent: lalala
 {&quot;query&quot;:&quot;mutation createUser(\n    $name: String!\n    $username: String!\n    $email: String!\n    $street: String\n    $city: String\n    $zipcode: String\n    $phone: String\n    $website: String\n    $companyName: String!\n\n){\n    createUser(\n        input:{\n            name: $name\n            username: $username\n            email: $email\n            address: {\n                street: $street\n                city: $city\n                zipcode: $zipcode\n            }\n            phone: $phone\n            website: $website\n            company: {\n                name: $companyName\n            }\n        }\n    ){\n        id\n        name\n        username\n        email\n    }\n}&quot;,&quot;variables&quot;:{&quot;name&quot;:&quot;Patricia Lebsack&quot;,&quot;username&quot;:&quot;Karianne&quot;,&quot;email&quot;:&quot;Julianne.OConner@kory.org&quot;,&quot;street&quot;:&quot;Hoeger Mall&quot;,&quot;city&quot;:&quot;South Elvis&quot;,&quot;zipcode&quot;:&quot;53919-4257&quot;,&quot;phone&quot;:&quot;493-170-9623 x156&quot;,&quot;website&quot;:&quot;kale.biz&quot;,&quot;companyName&quot;:&quot;Robel-Corkery&quot;}}
 
-14:26:52.473 response time in milliseconds: 1299.77
+08:32:54.583 response time in milliseconds: 1911.08
 1 &lt; 200
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json
@@ -487,11 +487,11 @@ $(document).ready(function() {
 1 &lt; access-control-allow-origin: *
 1 &lt; cache-control: s-maxage=0
 1 &lt; content-length: 120
-1 &lt; date: Thu, 27 May 2021 07:26:52 GMT
+1 &lt; date: Wed, 02 Jun 2021 01:32:54 GMT
 1 &lt; server: Vercel
 1 &lt; strict-transport-security: max-age=63072000
 1 &lt; x-vercel-cache: MISS
-1 &lt; x-vercel-id: sin1::sfo1::tjrr4-1622100411965-3ca9cec83462
+1 &lt; x-vercel-id: sin1::sfo1::6z5xd-1622597573880-a46f8d0b26f8
 {&quot;data&quot;:{&quot;createUser&quot;:{&quot;id&quot;:&quot;11&quot;,&quot;name&quot;:&quot;Patricia Lebsack&quot;,&quot;username&quot;:&quot;Karianne&quot;,&quot;email&quot;:&quot;Julianne.OConner@kory.org&quot;}}}</pre>
       </div>
     </div>
@@ -529,7 +529,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-6" class="collapse collapsable-details">
-        <pre>14:26:52.473 [print] {
+        <pre>08:32:54.585 [print] {
   &quot;data&quot;: {
     &quot;createUser&quot;: {
       &quot;name&quot;: &quot;Patricia Lebsack&quot;,
@@ -584,7 +584,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">match response == expectedSchemaResponse</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -656,7 +656,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">1.460</span>
+  <span class="lead-duration duration">2.608</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
@@ -699,7 +699,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def getQuery = read('getListUserQuery.graphql')</span>
 
-  <span class="lead-duration duration">0.007</span>
+  <span class="lead-duration duration">0.003</span>
 
 </div>
 
@@ -753,7 +753,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">request {query: '#(getQuery)', variables: '#(getVariable)'}</span>
 
-  <span class="lead-duration duration">0.009</span>
+  <span class="lead-duration duration">0.015</span>
 
 </div>
 
@@ -780,7 +780,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">print getQuery</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -798,7 +798,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-9" class="collapse collapsable-details">
-        <pre>14:26:50.864 [print] query users(
+        <pre>08:32:52.285 [print] query users(
     $limit: Int
 ){
     users(
@@ -862,7 +862,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-10" class="collapse collapsable-details">
-        <pre>14:26:50.866 [print] {
+        <pre>08:32:52.287 [print] {
   &quot;limit&quot;: 3
 }</pre>
       </div>
@@ -883,7 +883,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">1.420</span>
+  <span class="lead-duration duration">2.580</span>
 
 </div>
 
@@ -901,7 +901,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-11" class="collapse collapsable-details">
-        <pre>14:26:51.172 request:
+        <pre>08:32:52.668 request:
 1 &gt; POST https://graphqlzero.almansi.me/api
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -911,7 +911,7 @@ $(document).ready(function() {
 1 &gt; User-Agent: lalala
 {&quot;query&quot;:&quot;query users(\n    $limit: Int\n){\n    users(\n        options: {\n            paginate: {\n                limit: $limit\n            }\n        }\n    ){\n        data{\n            id\n            name\n            username\n            email\n            address{\n                street\n                city\n                zipcode\n            }\n            phone\n            website\n            company{\n                name\n            }\n        }\n    }\n}&quot;,&quot;variables&quot;:{&quot;limit&quot;:3}}
 
-14:26:52.285 response time in milliseconds: 1111.38
+08:32:54.867 response time in milliseconds: 2198.00
 1 &lt; 200
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json
@@ -919,11 +919,11 @@ $(document).ready(function() {
 1 &lt; access-control-allow-origin: *
 1 &lt; cache-control: s-maxage=0
 1 &lt; content-length: 803
-1 &lt; date: Thu, 27 May 2021 07:26:52 GMT
+1 &lt; date: Wed, 02 Jun 2021 01:32:54 GMT
 1 &lt; server: Vercel
 1 &lt; strict-transport-security: max-age=63072000
 1 &lt; x-vercel-cache: MISS
-1 &lt; x-vercel-id: sin1::sfo1::k9dj4-1622100411960-f8c5111cf8e6
+1 &lt; x-vercel-id: sin1::sfo1::w4zq2-1622597573877-d4e1f762b100
 {&quot;data&quot;:{&quot;users&quot;:{&quot;data&quot;:[{&quot;id&quot;:&quot;1&quot;,&quot;name&quot;:&quot;Leanne Graham&quot;,&quot;username&quot;:&quot;Bret&quot;,&quot;email&quot;:&quot;Sincere@april.biz&quot;,&quot;address&quot;:{&quot;street&quot;:&quot;Kulas Light&quot;,&quot;city&quot;:&quot;Gwenborough&quot;,&quot;zipcode&quot;:&quot;92998-3874&quot;},&quot;phone&quot;:&quot;1-770-736-8031 x56442&quot;,&quot;website&quot;:&quot;hildegard.org&quot;,&quot;company&quot;:{&quot;name&quot;:&quot;Romaguera-Crona&quot;}},{&quot;id&quot;:&quot;2&quot;,&quot;name&quot;:&quot;Ervin Howell&quot;,&quot;username&quot;:&quot;Antonette&quot;,&quot;email&quot;:&quot;Shanna@melissa.tv&quot;,&quot;address&quot;:{&quot;street&quot;:&quot;Victor Plains&quot;,&quot;city&quot;:&quot;Wisokyburgh&quot;,&quot;zipcode&quot;:&quot;90566-7771&quot;},&quot;phone&quot;:&quot;010-692-6593 x09125&quot;,&quot;website&quot;:&quot;anastasia.net&quot;,&quot;company&quot;:{&quot;name&quot;:&quot;Deckow-Crist&quot;}},{&quot;id&quot;:&quot;3&quot;,&quot;name&quot;:&quot;Clementine Bauch&quot;,&quot;username&quot;:&quot;Samantha&quot;,&quot;email&quot;:&quot;Nathan@yesenia.net&quot;,&quot;address&quot;:{&quot;street&quot;:&quot;Douglas Extension&quot;,&quot;city&quot;:&quot;McKenziehaven&quot;,&quot;zipcode&quot;:&quot;59590-4157&quot;},&quot;phone&quot;:&quot;1-463-123-4447&quot;,&quot;website&quot;:&quot;ramiro.info&quot;,&quot;company&quot;:{&quot;name&quot;:&quot;Romaguera-Jacobson&quot;}}]}}}</pre>
       </div>
     </div>
@@ -961,7 +961,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-12" class="collapse collapsable-details">
-        <pre>14:26:52.287 [print] {
+        <pre>08:32:54.868 [print] {
   &quot;data&quot;: {
     &quot;users&quot;: {
       &quot;data&quot;: [
@@ -1062,7 +1062,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">match each response.data.users.data[*].id != '#null'</span>
 
-  <span class="lead-duration duration">0.007</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -1089,7 +1089,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">assert response.data.users.data.length == 3</span>
 
-  <span class="lead-duration duration">0.012</span>
+  <span class="lead-duration duration">0.004</span>
 
 </div>
 
@@ -1134,7 +1134,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">5.075</span>
+  <span class="lead-duration duration">5.969</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
@@ -1177,7 +1177,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def getListUser = call read('reUsableUserSteps.feature@GetListUser')</span>
 
-  <span class="lead-duration duration">2.205</span>
+  <span class="lead-duration duration">2.448</span>
 
 </div>
 
@@ -1258,7 +1258,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; *</span>
   <span class="name">def testData = Java.type('dataGenerator')</span>
 
-  <span class="lead-duration duration">0.010</span>
+  <span class="lead-duration duration">0.003</span>
 
 </div>
 
@@ -1366,7 +1366,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; When</span>
   <span class="name">request {query: '#(getQuery)', variables: '#(getVariable)'}</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -1411,7 +1411,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-15" class="collapse collapsable-details">
-        <pre>14:26:50.871 [print] query users(
+        <pre>08:32:52.293 [print] query users(
     $limit: Int
 ){
     users(
@@ -1475,7 +1475,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-16" class="collapse collapsable-details">
-        <pre>14:26:50.871 [print] {
+        <pre>08:32:52.294 [print] {
 }</pre>
       </div>
     </div>
@@ -1495,7 +1495,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; And</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">2.162</span>
+  <span class="lead-duration duration">2.397</span>
 
 </div>
 
@@ -1513,7 +1513,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-17" class="collapse collapsable-details">
-        <pre>14:26:51.172 request:
+        <pre>08:32:52.668 request:
 1 &gt; POST https://graphqlzero.almansi.me/api
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -1523,7 +1523,7 @@ $(document).ready(function() {
 1 &gt; User-Agent: lalala
 {&quot;query&quot;:&quot;query users(\n    $limit: Int\n){\n    users(\n        options: {\n            paginate: {\n                limit: $limit\n            }\n        }\n    ){\n        data{\n            id\n            name\n            username\n            email\n            address{\n                street\n                city\n                zipcode\n            }\n            phone\n            website\n            company{\n                name\n            }\n        }\n    }\n}&quot;,&quot;variables&quot;:{}}
 
-14:26:53.033 response time in milliseconds: 1858.98
+08:32:54.690 response time in milliseconds: 2019.17
 1 &lt; 200
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json
@@ -1531,11 +1531,11 @@ $(document).ready(function() {
 1 &lt; access-control-allow-credentials: true
 1 &lt; access-control-allow-origin: *
 1 &lt; cache-control: s-maxage=0
-1 &lt; date: Thu, 27 May 2021 07:26:52 GMT
+1 &lt; date: Wed, 02 Jun 2021 01:32:54 GMT
 1 &lt; server: Vercel
 1 &lt; strict-transport-security: max-age=63072000
 1 &lt; x-vercel-cache: MISS
-1 &lt; x-vercel-id: sin1::sfo1::rx9sd-1622100411907-cd6102efe4a2
+1 &lt; x-vercel-id: sin1::sfo1::zhz4s-1622597573875-ad2bc5b86951
 {&quot;data&quot;:{&quot;users&quot;:{&quot;data&quot;:[{&quot;id&quot;:&quot;1&quot;,&quot;name&quot;:&quot;Leanne Graham&quot;,&quot;username&quot;:&quot;Bret&quot;,&quot;email&quot;:&quot;Sincere@april.biz&quot;,&quot;address&quot;:{&quot;street&quot;:&quot;Kulas Light&quot;,&quot;city&quot;:&quot;Gwenborough&quot;,&quot;zipcode&quot;:&quot;92998-3874&quot;},&quot;phone&quot;:&quot;1-770-736-8031 x56442&quot;,&quot;website&quot;:&quot;hildegard.org&quot;,&quot;company&quot;:{&quot;name&quot;:&quot;Romaguera-Crona&quot;}},{&quot;id&quot;:&quot;2&quot;,&quot;name&quot;:&quot;Ervin Howell&quot;,&quot;username&quot;:&quot;Antonette&quot;,&quot;email&quot;:&quot;Shanna@melissa.tv&quot;,&quot;address&quot;:{&quot;street&quot;:&quot;Victor Plains&quot;,&quot;city&quot;:&quot;Wisokyburgh&quot;,&quot;zipcode&quot;:&quot;90566-7771&quot;},&quot;phone&quot;:&quot;010-692-6593 x09125&quot;,&quot;website&quot;:&quot;anastasia.net&quot;,&quot;company&quot;:{&quot;name&quot;:&quot;Deckow-Crist&quot;}},{&quot;id&quot;:&quot;3&quot;,&quot;name&quot;:&quot;Clementine Bauch&quot;,&quot;username&quot;:&quot;Samantha&quot;,&quot;email&quot;:&quot;Nathan@yesenia.net&quot;,&quot;address&quot;:{&quot;street&quot;:&quot;Douglas Extension&quot;,&quot;city&quot;:&quot;McKenziehaven&quot;,&quot;zipcode&quot;:&quot;59590-4157&quot;},&quot;phone&quot;:&quot;1-463-123-4447&quot;,&quot;website&quot;:&quot;ramiro.info&quot;,&quot;company&quot;:{&quot;name&quot;:&quot;Romaguera-Jacobson&quot;}},{&quot;id&quot;:&quot;4&quot;,&quot;name&quot;:&quot;Patricia Lebsack&quot;,&quot;username&quot;:&quot;Karianne&quot;,&quot;email&quot;:&quot;Julianne.OConner@kory.org&quot;,&quot;address&quot;:{&quot;street&quot;:&quot;Hoeger Mall&quot;,&quot;city&quot;:&quot;South Elvis&quot;,&quot;zipcode&quot;:&quot;53919-4257&quot;},&quot;phone&quot;:&quot;493-170-9623 x156&quot;,&quot;website&quot;:&quot;kale.biz&quot;,&quot;company&quot;:{&quot;name&quot;:&quot;Robel-Corkery&quot;}},{&quot;id&quot;:&quot;5&quot;,&quot;name&quot;:&quot;Chelsey Dietrich&quot;,&quot;username&quot;:&quot;Kamren&quot;,&quot;email&quot;:&quot;Lucio_Hettinger@annie.ca&quot;,&quot;address&quot;:{&quot;street&quot;:&quot;Skiles Walks&quot;,&quot;city&quot;:&quot;Roscoeview&quot;,&quot;zipcode&quot;:&quot;33263&quot;},&quot;phone&quot;:&quot;(254)954-1289&quot;,&quot;website&quot;:&quot;demarco.info&quot;,&quot;company&quot;:{&quot;name&quot;:&quot;Keebler LLC&quot;}},{&quot;id&quot;:&quot;6&quot;,&quot;name&quot;:&quot;Mrs. Dennis Schulist&quot;,&quot;username&quot;:&quot;Leopoldo_Corkery&quot;,&quot;email&quot;:&quot;Karley_Dach@jasper.info&quot;,&quot;address&quot;:{&quot;street&quot;:&quot;Norberto Crossing&quot;,&quot;city&quot;:&quot;South Christy&quot;,&quot;zipcode&quot;:&quot;23505-1337&quot;},&quot;phone&quot;:&quot;1-477-935-8478 x6430&quot;,&quot;website&quot;:&quot;ola.org&quot;,&quot;company&quot;:{&quot;name&quot;:&quot;Considine-Lockman&quot;}},{&quot;id&quot;:&quot;7&quot;,&quot;name&quot;:&quot;Kurtis Weissnat&quot;,&quot;username&quot;:&quot;Elwyn.Skiles&quot;,&quot;email&quot;:&quot;Telly.Hoeger@billy.biz&quot;,&quot;address&quot;:{&quot;street&quot;:&quot;Rex Trail&quot;,&quot;city&quot;:&quot;Howemouth&quot;,&quot;zipcode&quot;:&quot;58804-1099&quot;},&quot;phone&quot;:&quot;210.067.6132&quot;,&quot;website&quot;:&quot;elvis.io&quot;,&quot;company&quot;:{&quot;name&quot;:&quot;Johns Group&quot;}},{&quot;id&quot;:&quot;8&quot;,&quot;name&quot;:&quot;Nicholas Runolfsdottir V&quot;,&quot;username&quot;:&quot;Maxime_Nienow&quot;,&quot;email&quot;:&quot;Sherwood@rosamond.me&quot;,&quot;address&quot;:{&quot;street&quot;:&quot;Ellsworth Summit&quot;,&quot;city&quot;:&quot;Aliyaview&quot;,&quot;zipcode&quot;:&quot;45169&quot;},&quot;phone&quot;:&quot;586.493.6943 x140&quot;,&quot;website&quot;:&quot;jacynthe.com&quot;,&quot;company&quot;:{&quot;name&quot;:&quot;Abernathy Group&quot;}},{&quot;id&quot;:&quot;9&quot;,&quot;name&quot;:&quot;Glenna Reichert&quot;,&quot;username&quot;:&quot;Delphine&quot;,&quot;email&quot;:&quot;Chaim_McDermott@dana.io&quot;,&quot;address&quot;:{&quot;street&quot;:&quot;Dayna Park&quot;,&quot;city&quot;:&quot;Bartholomebury&quot;,&quot;zipcode&quot;:&quot;76495-3109&quot;},&quot;phone&quot;:&quot;(775)976-6794 x41206&quot;,&quot;website&quot;:&quot;conrad.com&quot;,&quot;company&quot;:{&quot;name&quot;:&quot;Yost and Sons&quot;}},{&quot;id&quot;:&quot;10&quot;,&quot;name&quot;:&quot;Clementina DuBuque&quot;,&quot;username&quot;:&quot;Moriah.Stanton&quot;,&quot;email&quot;:&quot;Rey.Padberg@karina.biz&quot;,&quot;address&quot;:{&quot;street&quot;:&quot;Kattie Turnpike&quot;,&quot;city&quot;:&quot;Lebsackbury&quot;,&quot;zipcode&quot;:&quot;31428-2261&quot;},&quot;phone&quot;:&quot;024-648-3804&quot;,&quot;website&quot;:&quot;ambrose.net&quot;,&quot;company&quot;:{&quot;name&quot;:&quot;Hoeger LLC&quot;}}]}}}</pre>
       </div>
     </div>
@@ -1573,7 +1573,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-18" class="collapse collapsable-details">
-        <pre>14:26:53.035 [print] {
+        <pre>08:32:54.692 [print] {
   &quot;data&quot;: {
     &quot;users&quot;: {
       &quot;data&quot;: [
@@ -1786,7 +1786,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; *</span>
   <span class="name">def id = response.data.users.data[0].id</span>
 
-  <span class="lead-duration duration">0.011</span>
+  <span class="lead-duration duration">0.018</span>
 
 </div>
 
@@ -1840,7 +1840,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def getQuery = read('getDetailUserQuery.graphql')</span>
 
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -1939,7 +1939,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-19" class="collapse collapsable-details">
-        <pre>14:26:53.060 [print] query user(
+        <pre>08:32:54.723 [print] query user(
     $id: ID!
 ){
     user(
@@ -1997,7 +1997,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-20" class="collapse collapsable-details">
-        <pre>14:26:53.060 [print] {
+        <pre>08:32:54.723 [print] {
   &quot;id&quot;: &quot;1&quot;
 }</pre>
       </div>
@@ -2018,7 +2018,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.662</span>
+  <span class="lead-duration duration">1.080</span>
 
 </div>
 
@@ -2036,7 +2036,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-21" class="collapse collapsable-details">
-        <pre>14:26:53.062 request:
+        <pre>08:32:54.724 request:
 1 &gt; POST https://graphqlzero.almansi.me/api
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -2046,7 +2046,7 @@ $(document).ready(function() {
 1 &gt; User-Agent: lalala
 {&quot;query&quot;:&quot;query user(\n    $id: ID!\n){\n    user(\n        id: $id\n    ){\n        id\n        name\n        username\n        email\n        address{\n            street\n            city\n            zipcode\n        }\n        phone\n        website\n        company{\n            name\n        }\n    }\n}&quot;,&quot;variables&quot;:{&quot;id&quot;:&quot;1&quot;}}
 
-14:26:53.719 response time in milliseconds: 656.69
+08:32:55.803 response time in milliseconds: 1078.19
 1 &lt; 200
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json
@@ -2054,11 +2054,11 @@ $(document).ready(function() {
 1 &lt; access-control-allow-origin: *
 1 &lt; cache-control: s-maxage=0
 1 &lt; content-length: 272
-1 &lt; date: Thu, 27 May 2021 07:26:53 GMT
+1 &lt; date: Wed, 02 Jun 2021 01:32:55 GMT
 1 &lt; server: Vercel
 1 &lt; strict-transport-security: max-age=63072000
 1 &lt; x-vercel-cache: MISS
-1 &lt; x-vercel-id: sin1::sfo1::k4rgm-1622100413294-6a82a312035b
+1 &lt; x-vercel-id: sin1::sfo1::7pwhn-1622597575053-8562c623f988
 {&quot;data&quot;:{&quot;user&quot;:{&quot;id&quot;:&quot;1&quot;,&quot;name&quot;:&quot;Leanne Graham&quot;,&quot;username&quot;:&quot;Bret&quot;,&quot;email&quot;:&quot;Sincere@april.biz&quot;,&quot;address&quot;:{&quot;street&quot;:&quot;Kulas Light&quot;,&quot;city&quot;:&quot;Gwenborough&quot;,&quot;zipcode&quot;:&quot;92998-3874&quot;},&quot;phone&quot;:&quot;1-770-736-8031 x56442&quot;,&quot;website&quot;:&quot;hildegard.org&quot;,&quot;company&quot;:{&quot;name&quot;:&quot;Romaguera-Crona&quot;}}}}</pre>
       </div>
     </div>
@@ -2096,7 +2096,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-22" class="collapse collapsable-details">
-        <pre>14:26:53.723 [print] {
+        <pre>08:32:55.804 [print] {
   &quot;data&quot;: {
     &quot;user&quot;: {
       &quot;website&quot;: &quot;hildegard.org&quot;,
@@ -2161,7 +2161,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">match response.data.user.name == '#(getListUser.name)'</span>
 
-  <span class="lead-duration duration">0.004</span>
+  <span class="lead-duration duration">0.005</span>
 
 </div>
 

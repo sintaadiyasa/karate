@@ -13,7 +13,7 @@
     <div id="visualization"></div>
     <script>
 var groups = new vis.DataSet([{"id":1,"content":"ForkJoinPool-1-worker-1"},{"id":2,"content":"ForkJoinPool-1-worker-2"},{"id":3,"content":"ForkJoinPool-1-worker-3"}]);
-var items = new vis.DataSet([{"id":1,"group":1,"content":"userTests[1:9]","start":708,"end":2394,"title":"userTests[1:9] 07:00:00.708-07:00:02.394 Create user"},{"id":2,"group":2,"content":"userTests[2:23]","start":708,"end":2226,"title":"userTests[2:23] 07:00:00.708-07:00:02.226 Get list user"},{"id":3,"group":3,"content":"userTests[3:36]","start":708,"end":3646,"title":"userTests[3:36] 07:00:00.708-07:00:03.646 Get detail user"}]);
+var items = new vis.DataSet([{"id":1,"group":1,"content":"userTests[1:9]","start":903,"end":3285,"title":"userTests[1:9] 07:00:00.903-07:00:03.285 Create user"},{"id":2,"group":2,"content":"userTests[2:23]","start":903,"end":3571,"title":"userTests[2:23] 07:00:00.903-07:00:03.571 Get list user"},{"id":3,"group":3,"content":"userTests[3:36]","start":903,"end":4504,"title":"userTests[3:36] 07:00:00.903-07:00:04.504 Get detail user"}]);
 var container = document.getElementById('visualization');
 var timeline = new vis.Timeline(container);
 timeline.setOptions({ groupOrder: 'content' });

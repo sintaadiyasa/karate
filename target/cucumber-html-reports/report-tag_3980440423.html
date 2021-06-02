@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>isqa</td>
-      <td>27 May 2021, 14:26</td>
+      <td>02 Jun 2021, 08:32</td>
     </tr>
   </tbody>
 </table>
@@ -138,7 +138,7 @@ $(document).ready(function() {
           <td >0</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="1460738790">1.460</td>
+          <td class="duration" data-value="2608626890">2.608</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -182,7 +182,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">1.460</span>
+  <span class="lead-duration duration">2.608</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -225,7 +225,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def getQuery = read('getListUserQuery.graphql')</span>
 
-  <span class="lead-duration duration">0.007</span>
+  <span class="lead-duration duration">0.003</span>
 
 </div>
 
@@ -279,7 +279,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">request {query: '#(getQuery)', variables: '#(getVariable)'}</span>
 
-  <span class="lead-duration duration">0.009</span>
+  <span class="lead-duration duration">0.015</span>
 
 </div>
 
@@ -306,7 +306,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">print getQuery</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -324,7 +324,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>14:26:50.864 [print] query users(
+        <pre>08:32:52.285 [print] query users(
     $limit: Int
 ){
     users(
@@ -388,7 +388,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-4" class="collapse collapsable-details">
-        <pre>14:26:50.866 [print] {
+        <pre>08:32:52.287 [print] {
   &quot;limit&quot;: 3
 }</pre>
       </div>
@@ -409,7 +409,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">1.420</span>
+  <span class="lead-duration duration">2.580</span>
 
 </div>
 
@@ -427,7 +427,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-5" class="collapse collapsable-details">
-        <pre>14:26:51.172 request:
+        <pre>08:32:52.668 request:
 1 &gt; POST https://graphqlzero.almansi.me/api
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
@@ -437,7 +437,7 @@ $(document).ready(function() {
 1 &gt; User-Agent: lalala
 {&quot;query&quot;:&quot;query users(\n    $limit: Int\n){\n    users(\n        options: {\n            paginate: {\n                limit: $limit\n            }\n        }\n    ){\n        data{\n            id\n            name\n            username\n            email\n            address{\n                street\n                city\n                zipcode\n            }\n            phone\n            website\n            company{\n                name\n            }\n        }\n    }\n}&quot;,&quot;variables&quot;:{&quot;limit&quot;:3}}
 
-14:26:52.285 response time in milliseconds: 1111.38
+08:32:54.867 response time in milliseconds: 2198.00
 1 &lt; 200
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json
@@ -445,11 +445,11 @@ $(document).ready(function() {
 1 &lt; access-control-allow-origin: *
 1 &lt; cache-control: s-maxage=0
 1 &lt; content-length: 803
-1 &lt; date: Thu, 27 May 2021 07:26:52 GMT
+1 &lt; date: Wed, 02 Jun 2021 01:32:54 GMT
 1 &lt; server: Vercel
 1 &lt; strict-transport-security: max-age=63072000
 1 &lt; x-vercel-cache: MISS
-1 &lt; x-vercel-id: sin1::sfo1::k9dj4-1622100411960-f8c5111cf8e6
+1 &lt; x-vercel-id: sin1::sfo1::w4zq2-1622597573877-d4e1f762b100
 {&quot;data&quot;:{&quot;users&quot;:{&quot;data&quot;:[{&quot;id&quot;:&quot;1&quot;,&quot;name&quot;:&quot;Leanne Graham&quot;,&quot;username&quot;:&quot;Bret&quot;,&quot;email&quot;:&quot;Sincere@april.biz&quot;,&quot;address&quot;:{&quot;street&quot;:&quot;Kulas Light&quot;,&quot;city&quot;:&quot;Gwenborough&quot;,&quot;zipcode&quot;:&quot;92998-3874&quot;},&quot;phone&quot;:&quot;1-770-736-8031 x56442&quot;,&quot;website&quot;:&quot;hildegard.org&quot;,&quot;company&quot;:{&quot;name&quot;:&quot;Romaguera-Crona&quot;}},{&quot;id&quot;:&quot;2&quot;,&quot;name&quot;:&quot;Ervin Howell&quot;,&quot;username&quot;:&quot;Antonette&quot;,&quot;email&quot;:&quot;Shanna@melissa.tv&quot;,&quot;address&quot;:{&quot;street&quot;:&quot;Victor Plains&quot;,&quot;city&quot;:&quot;Wisokyburgh&quot;,&quot;zipcode&quot;:&quot;90566-7771&quot;},&quot;phone&quot;:&quot;010-692-6593 x09125&quot;,&quot;website&quot;:&quot;anastasia.net&quot;,&quot;company&quot;:{&quot;name&quot;:&quot;Deckow-Crist&quot;}},{&quot;id&quot;:&quot;3&quot;,&quot;name&quot;:&quot;Clementine Bauch&quot;,&quot;username&quot;:&quot;Samantha&quot;,&quot;email&quot;:&quot;Nathan@yesenia.net&quot;,&quot;address&quot;:{&quot;street&quot;:&quot;Douglas Extension&quot;,&quot;city&quot;:&quot;McKenziehaven&quot;,&quot;zipcode&quot;:&quot;59590-4157&quot;},&quot;phone&quot;:&quot;1-463-123-4447&quot;,&quot;website&quot;:&quot;ramiro.info&quot;,&quot;company&quot;:{&quot;name&quot;:&quot;Romaguera-Jacobson&quot;}}]}}}</pre>
       </div>
     </div>
@@ -487,7 +487,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-6" class="collapse collapsable-details">
-        <pre>14:26:52.287 [print] {
+        <pre>08:32:54.868 [print] {
   &quot;data&quot;: {
     &quot;users&quot;: {
       &quot;data&quot;: [
@@ -588,7 +588,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">match each response.data.users.data[*].id != '#null'</span>
 
-  <span class="lead-duration duration">0.007</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -615,7 +615,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">assert response.data.users.data.length == 3</span>
 
-  <span class="lead-duration duration">0.012</span>
+  <span class="lead-duration duration">0.004</span>
 
 </div>
 

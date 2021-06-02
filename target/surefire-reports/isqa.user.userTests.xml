@@ -2,8 +2,8 @@
            name="isqa/user/userTests.feature"
            skipped="0"
            tests="3"
-           time="6.093933">
-   <testcase classname="isqa.user.userTests" name="Create user" time="1.670179">
+           time="8.598999">
+   <testcase classname="isqa.user.userTests" name="Create user" time="2.364908">
       <system-out>* url urlBase ............................................................. passed
 * def testData = Java.type('dataGenerator') ............................... passed
 Given header User-Agent = 'lalala' ........................................ passed
@@ -21,7 +21,7 @@ And match response.data.createUser.name == 'Patricia Lebsack' ............. pass
    </testcase>
    <testcase classname="isqa.user.userTests"
              name="Get list user"
-             time="1.501224">
+             time="2.649932">
       <system-out>* url urlBase ............................................................. passed
 * def testData = Java.type('dataGenerator') ............................... passed
 Given header User-Agent = 'lalala' ........................................ passed
@@ -52,7 +52,7 @@ And assert response.data.users.data.length == 3 ........................... pass
    </testcase>
    <testcase classname="isqa.user.userTests"
              name="Get detail user"
-             time="2.92253">
+             time="3.584158">
       <system-out>* url urlBase ............................................................. passed
 * def testData = Java.type('dataGenerator') ............................... passed
 Given header User-Agent = 'lalala' ........................................ passed

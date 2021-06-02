@@ -1,4 +1,4 @@
-14:26:50.864 [print] query users(
+08:32:52.285 [print] query users(
     $limit: Int
 ){
     users(
@@ -26,11 +26,11 @@
         }
     }
 }
-14:26:50.866 [print] {
+08:32:52.287 [print] {
   "limit": 3
 }
 
-14:26:51.172 request:
+08:32:52.668 request:
 1 > POST https://graphqlzero.almansi.me/api
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -40,7 +40,7 @@
 1 > User-Agent: lalala
 {"query":"query users(\n    $limit: Int\n){\n    users(\n        options: {\n            paginate: {\n                limit: $limit\n            }\n        }\n    ){\n        data{\n            id\n            name\n            username\n            email\n            address{\n                street\n                city\n                zipcode\n            }\n            phone\n            website\n            company{\n                name\n            }\n        }\n    }\n}","variables":{"limit":3}}
 
-14:26:52.285 response time in milliseconds: 1111.38
+08:32:54.867 response time in milliseconds: 2198.00
 1 < 200
 1 < Connection: keep-alive
 1 < Content-Type: application/json
@@ -48,15 +48,15 @@
 1 < access-control-allow-origin: *
 1 < cache-control: s-maxage=0
 1 < content-length: 803
-1 < date: Thu, 27 May 2021 07:26:52 GMT
+1 < date: Wed, 02 Jun 2021 01:32:54 GMT
 1 < server: Vercel
 1 < strict-transport-security: max-age=63072000
 1 < x-vercel-cache: MISS
-1 < x-vercel-id: sin1::sfo1::k9dj4-1622100411960-f8c5111cf8e6
+1 < x-vercel-id: sin1::sfo1::w4zq2-1622597573877-d4e1f762b100
 {"data":{"users":{"data":[{"id":"1","name":"Leanne Graham","username":"Bret","email":"Sincere@april.biz","address":{"street":"Kulas Light","city":"Gwenborough","zipcode":"92998-3874"},"phone":"1-770-736-8031 x56442","website":"hildegard.org","company":{"name":"Romaguera-Crona"}},{"id":"2","name":"Ervin Howell","username":"Antonette","email":"Shanna@melissa.tv","address":{"street":"Victor Plains","city":"Wisokyburgh","zipcode":"90566-7771"},"phone":"010-692-6593 x09125","website":"anastasia.net","company":{"name":"Deckow-Crist"}},{"id":"3","name":"Clementine Bauch","username":"Samantha","email":"Nathan@yesenia.net","address":{"street":"Douglas Extension","city":"McKenziehaven","zipcode":"59590-4157"},"phone":"1-463-123-4447","website":"ramiro.info","company":{"name":"Romaguera-Jacobson"}}]}}}
 
 
-14:26:52.287 [print] {
+08:32:54.868 [print] {
   "data": {
     "users": {
       "data": [

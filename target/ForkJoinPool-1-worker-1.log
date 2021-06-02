@@ -1,4 +1,4 @@
-14:26:50.867 [print] mutation createUser(
+08:32:52.290 [print] mutation createUser(
     $name: String!
     $username: String!
     $email: String!
@@ -33,7 +33,7 @@
         email
     }
 }
-14:26:50.867 [print] {
+08:32:52.291 [print] {
   "name": "Patricia Lebsack",
   "username": "Karianne",
   "email": "Julianne.OConner@kory.org",
@@ -45,7 +45,7 @@
   "companyName": "Robel-Corkery"
 }
 
-14:26:51.172 request:
+08:32:52.668 request:
 1 > POST https://graphqlzero.almansi.me/api
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -55,7 +55,7 @@
 1 > User-Agent: lalala
 {"query":"mutation createUser(\n    $name: String!\n    $username: String!\n    $email: String!\n    $street: String\n    $city: String\n    $zipcode: String\n    $phone: String\n    $website: String\n    $companyName: String!\n\n){\n    createUser(\n        input:{\n            name: $name\n            username: $username\n            email: $email\n            address: {\n                street: $street\n                city: $city\n                zipcode: $zipcode\n            }\n            phone: $phone\n            website: $website\n            company: {\n                name: $companyName\n            }\n        }\n    ){\n        id\n        name\n        username\n        email\n    }\n}","variables":{"name":"Patricia Lebsack","username":"Karianne","email":"Julianne.OConner@kory.org","street":"Hoeger Mall","city":"South Elvis","zipcode":"53919-4257","phone":"493-170-9623 x156","website":"kale.biz","companyName":"Robel-Corkery"}}
 
-14:26:52.473 response time in milliseconds: 1299.77
+08:32:54.583 response time in milliseconds: 1911.08
 1 < 200
 1 < Connection: keep-alive
 1 < Content-Type: application/json
@@ -63,15 +63,15 @@
 1 < access-control-allow-origin: *
 1 < cache-control: s-maxage=0
 1 < content-length: 120
-1 < date: Thu, 27 May 2021 07:26:52 GMT
+1 < date: Wed, 02 Jun 2021 01:32:54 GMT
 1 < server: Vercel
 1 < strict-transport-security: max-age=63072000
 1 < x-vercel-cache: MISS
-1 < x-vercel-id: sin1::sfo1::tjrr4-1622100411965-3ca9cec83462
+1 < x-vercel-id: sin1::sfo1::6z5xd-1622597573880-a46f8d0b26f8
 {"data":{"createUser":{"id":"11","name":"Patricia Lebsack","username":"Karianne","email":"Julianne.OConner@kory.org"}}}
 
 
-14:26:52.473 [print] {
+08:32:54.585 [print] {
   "data": {
     "createUser": {
       "name": "Patricia Lebsack",

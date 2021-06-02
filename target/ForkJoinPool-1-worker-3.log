@@ -1,4 +1,4 @@
-14:26:50.871 [print] query users(
+08:32:52.293 [print] query users(
     $limit: Int
 ){
     users(
@@ -26,10 +26,10 @@
         }
     }
 }
-14:26:50.871 [print] {
+08:32:52.294 [print] {
 }
 
-14:26:51.172 request:
+08:32:52.668 request:
 1 > POST https://graphqlzero.almansi.me/api
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -39,7 +39,7 @@
 1 > User-Agent: lalala
 {"query":"query users(\n    $limit: Int\n){\n    users(\n        options: {\n            paginate: {\n                limit: $limit\n            }\n        }\n    ){\n        data{\n            id\n            name\n            username\n            email\n            address{\n                street\n                city\n                zipcode\n            }\n            phone\n            website\n            company{\n                name\n            }\n        }\n    }\n}","variables":{}}
 
-14:26:53.033 response time in milliseconds: 1858.98
+08:32:54.690 response time in milliseconds: 2019.17
 1 < 200
 1 < Connection: keep-alive
 1 < Content-Type: application/json
@@ -47,15 +47,15 @@
 1 < access-control-allow-credentials: true
 1 < access-control-allow-origin: *
 1 < cache-control: s-maxage=0
-1 < date: Thu, 27 May 2021 07:26:52 GMT
+1 < date: Wed, 02 Jun 2021 01:32:54 GMT
 1 < server: Vercel
 1 < strict-transport-security: max-age=63072000
 1 < x-vercel-cache: MISS
-1 < x-vercel-id: sin1::sfo1::rx9sd-1622100411907-cd6102efe4a2
+1 < x-vercel-id: sin1::sfo1::zhz4s-1622597573875-ad2bc5b86951
 {"data":{"users":{"data":[{"id":"1","name":"Leanne Graham","username":"Bret","email":"Sincere@april.biz","address":{"street":"Kulas Light","city":"Gwenborough","zipcode":"92998-3874"},"phone":"1-770-736-8031 x56442","website":"hildegard.org","company":{"name":"Romaguera-Crona"}},{"id":"2","name":"Ervin Howell","username":"Antonette","email":"Shanna@melissa.tv","address":{"street":"Victor Plains","city":"Wisokyburgh","zipcode":"90566-7771"},"phone":"010-692-6593 x09125","website":"anastasia.net","company":{"name":"Deckow-Crist"}},{"id":"3","name":"Clementine Bauch","username":"Samantha","email":"Nathan@yesenia.net","address":{"street":"Douglas Extension","city":"McKenziehaven","zipcode":"59590-4157"},"phone":"1-463-123-4447","website":"ramiro.info","company":{"name":"Romaguera-Jacobson"}},{"id":"4","name":"Patricia Lebsack","username":"Karianne","email":"Julianne.OConner@kory.org","address":{"street":"Hoeger Mall","city":"South Elvis","zipcode":"53919-4257"},"phone":"493-170-9623 x156","website":"kale.biz","company":{"name":"Robel-Corkery"}},{"id":"5","name":"Chelsey Dietrich","username":"Kamren","email":"Lucio_Hettinger@annie.ca","address":{"street":"Skiles Walks","city":"Roscoeview","zipcode":"33263"},"phone":"(254)954-1289","website":"demarco.info","company":{"name":"Keebler LLC"}},{"id":"6","name":"Mrs. Dennis Schulist","username":"Leopoldo_Corkery","email":"Karley_Dach@jasper.info","address":{"street":"Norberto Crossing","city":"South Christy","zipcode":"23505-1337"},"phone":"1-477-935-8478 x6430","website":"ola.org","company":{"name":"Considine-Lockman"}},{"id":"7","name":"Kurtis Weissnat","username":"Elwyn.Skiles","email":"Telly.Hoeger@billy.biz","address":{"street":"Rex Trail","city":"Howemouth","zipcode":"58804-1099"},"phone":"210.067.6132","website":"elvis.io","company":{"name":"Johns Group"}},{"id":"8","name":"Nicholas Runolfsdottir V","username":"Maxime_Nienow","email":"Sherwood@rosamond.me","address":{"street":"Ellsworth Summit","city":"Aliyaview","zipcode":"45169"},"phone":"586.493.6943 x140","website":"jacynthe.com","company":{"name":"Abernathy Group"}},{"id":"9","name":"Glenna Reichert","username":"Delphine","email":"Chaim_McDermott@dana.io","address":{"street":"Dayna Park","city":"Bartholomebury","zipcode":"76495-3109"},"phone":"(775)976-6794 x41206","website":"conrad.com","company":{"name":"Yost and Sons"}},{"id":"10","name":"Clementina DuBuque","username":"Moriah.Stanton","email":"Rey.Padberg@karina.biz","address":{"street":"Kattie Turnpike","city":"Lebsackbury","zipcode":"31428-2261"},"phone":"024-648-3804","website":"ambrose.net","company":{"name":"Hoeger LLC"}}]}}}
 
 
-14:26:53.035 [print] {
+08:32:54.692 [print] {
   "data": {
     "users": {
       "data": [
@@ -224,7 +224,7 @@
   }
 }
 
-14:26:53.060 [print] query user(
+08:32:54.723 [print] query user(
     $id: ID!
 ){
     user(
@@ -246,11 +246,11 @@
         }
     }
 }
-14:26:53.060 [print] {
+08:32:54.723 [print] {
   "id": "1"
 }
 
-14:26:53.062 request:
+08:32:54.724 request:
 1 > POST https://graphqlzero.almansi.me/api
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -260,7 +260,7 @@
 1 > User-Agent: lalala
 {"query":"query user(\n    $id: ID!\n){\n    user(\n        id: $id\n    ){\n        id\n        name\n        username\n        email\n        address{\n            street\n            city\n            zipcode\n        }\n        phone\n        website\n        company{\n            name\n        }\n    }\n}","variables":{"id":"1"}}
 
-14:26:53.719 response time in milliseconds: 656.69
+08:32:55.803 response time in milliseconds: 1078.19
 1 < 200
 1 < Connection: keep-alive
 1 < Content-Type: application/json
@@ -268,15 +268,15 @@
 1 < access-control-allow-origin: *
 1 < cache-control: s-maxage=0
 1 < content-length: 272
-1 < date: Thu, 27 May 2021 07:26:53 GMT
+1 < date: Wed, 02 Jun 2021 01:32:55 GMT
 1 < server: Vercel
 1 < strict-transport-security: max-age=63072000
 1 < x-vercel-cache: MISS
-1 < x-vercel-id: sin1::sfo1::k4rgm-1622100413294-6a82a312035b
+1 < x-vercel-id: sin1::sfo1::7pwhn-1622597575053-8562c623f988
 {"data":{"user":{"id":"1","name":"Leanne Graham","username":"Bret","email":"Sincere@april.biz","address":{"street":"Kulas Light","city":"Gwenborough","zipcode":"92998-3874"},"phone":"1-770-736-8031 x56442","website":"hildegard.org","company":{"name":"Romaguera-Crona"}}}}
 
 
-14:26:53.723 [print] {
+08:32:55.804 [print] {
   "data": {
     "user": {
       "website": "hildegard.org",
